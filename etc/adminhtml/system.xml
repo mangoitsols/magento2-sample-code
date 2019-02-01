@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Backend/etc/system_file.xsd">
+    <system>
+        <tab id="mangoit" translate="label" sortOrder="1000">
+            <label>Mangoit</label>
+        </tab>
+        <section id="mangoit_onepagecheckout" translate="label" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>One Step Checkout</label>
+            <tab>mangoit</tab>
+            <resource>Mangoit_Onepagecheckout::system_config</resource>
+
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General Settings</label>
+                <field id="enable_in_frontend" translate="label" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="onepagecheckout_title" translate="label" type="text" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Meta Title</label>
+                </field>
+
+                <field id="onepagecheckout_discount_enable" translate="label" type="select" sortOrder="7" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Display Discount Field</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+
+                <field id="onepage_checkout_comments_enabled" translate="label" type="select" sortOrder="99" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Order Comments?</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+
+        </section>
+    </system>
+</config>

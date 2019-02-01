@@ -1,0 +1,41 @@
+<?php
+/**
+ * File is used for Onepagecheckout module in Magento 2
+ * Mangoit Onepagecheckout
+ *
+ * @category Onepagecheckout
+ * @package  Mangoit
+ */
+
+?>
+<div id="registration" data-bind="scope:'registration'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+    <script type="text/x-magento-init">
+        {
+            "#registration": {
+                "Magento_Ui/js/core/app": {
+                   "components": {
+                        "registration": {
+                            "component": "Mangoit_Onepagecheckout/js/view/registration",
+                            "config": {
+                                "registrationUrl": "<?php /* @escapeNotVerified */ echo $block->getCreateAccountUrl(); ?>",
+                                "email": "<?php /* @escapeNotVerified */ echo $block->getEmailAddress(); ?>",
+                                 "accountCreateUrl": "<?php /* @escapeNotVerified */ echo $block->getBaseUrl().'rest/V1/checkout/customer'; ?>"
+                            },
+                            "children": {
+                                "errors": {
+                                    "component": "Magento_Ui/js/view/messages",
+                                    "sortOrder": 0,
+                                    "displayArea": "messages",
+                                    "config": {
+                                        "autoHideTimeOut": -1
+                                     }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</div>

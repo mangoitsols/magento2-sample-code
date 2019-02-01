@@ -1,0 +1,48 @@
+/*STORE CREDIT & REWARD POINTS*/
+button.mangoit-onepagecheckout-storecredit-button:hover, button.mangoit-rewardpoints-button:hover{background-color: #39B9C6;}
+button.mangoit-onepagecheckout-storecredit-button, button.mangoit-rewardpoints-button {
+    background-color: #00909E;
+    color: #fff;
+    min-height: 40px;
+    font: bold 16px 'Open Sans';
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0;
+    margin: 0 auto !important;
+    display: block;
+    min-width: 100% !important;
+    text-align: center;
+}
+
+.mangoit-payment-option-content.payment-option-content.field.choice { padding: 0 0 0 0;     margin-bottom: -7px;}
+
+div.mangoit-onepagecheckout-additional-payment{
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 1px solid #dadada;
+}
+div.mangoit-onepagecheckout-additional-payment + div.mangoit-rewardpoints {
+    margin-top: 0;
+    border: none;
+    padding-top: 0;
+}
+div.mangoit-rewardpoints {
+    margin-bottom: -21px;
+}
+
+/*****************************/
+
+
+/*****RESPONSIVE DESIGN EE*****/
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    div.mangoit-rewardpoints {margin-bottom: -21px;}
+    div.mangoit-onepagecheckout-additional-payment{padding-top: 25px; margin: 25px 0 0 2px !important; border-top: 1px solid #dadada;}
+    div.mangoit-onepagecheckout-additional-payment + div.mangoit-rewardpoints{margin-top: 0 !important;}
+    .mangoit-grand-total-item{margin-top: 11px; margin-left: 2px;}
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    div.mangoit-onepagecheckout-additional-payment { margin: 25px 0 0 0 !important; }
+    div.mangoit-onepagecheckout-additional-payment + div.mangoit-rewardpoints{margin-top: 0 !important;}
+    .mangoit-grand-total-item{margin-top: 12px;}
+}
+/*****************************/

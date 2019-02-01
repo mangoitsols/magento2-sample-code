@@ -1,0 +1,16 @@
+<!--
+/**
+ * File is used for Onepagecheckout module in Magento 2
+ * Mangoit Onepagecheckout
+ *
+ * @category Onepagecheckout
+ * @package  Mangoit
+ */
+-->
+<!-- ko if: (visible()) -->
+    <!-- ko text: address().firstname --><!-- /ko --> <!-- ko text: address().lastname --><!-- /ko --><br/>
+    <!-- ko text: address().street --><!-- /ko --><br/>
+    <!-- ko text: address().city --><!-- /ko -->, <!-- ko text: address().region --><!-- /ko --> <!-- ko text: address().postcode --><!-- /ko --><br/>
+    <!-- ko text: getCountryName(address().countryId) --><!-- /ko --><br/>
+    <!-- ko text: address().telephone --><!-- /ko --><br/>
+<!-- /ko -->
