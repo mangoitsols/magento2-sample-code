@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<preference for="Magento\Bundle\Block\Catalog\Product\View\Type\Bundle" type="MangoIt\BundleProductImage\Block\Catalog\Product\View\Type\Bundle" />
+	<preference for="Magento\ImportExport\Controller\Adminhtml\Export\Export" type="MangoIt\BundleProductImage\Controller\Adminhtml\Export\Export"/>
+	<preference for="Magento\Customer\Model\Address\Validator\General" type="MangoIt\BundleProductImage\Model\Address\Validator\General"/>
+	<preference for="Magento\Bundle\Helper\Catalog\Product\Configuration" type="MangoIt\BundleProductImage\Helper\Catalog\Product\Configuration"/>
+	<preference for="Magento\User\Block\User\Edit\Tab\Roles" type="MangoIt\BundleProductImage\Block\User\Edit\Tab\Roles" />
+	<preference for="Magento\Authorization\Model\ResourceModel\Role\Grid\Collection" type="MangoIt\BundleProductImage\Model\ResourceModel\Role\Grid\Collection" />
+	<preference for="Magento\User\Model\ResourceModel\User\Collection" type="MangoIt\BundleProductImage\Model\ResourceModel\User\Collection" />
+	<preference for="Magento\Bundle\Model\Product\LinksList" type="MangoIt\BundleProductImage\Model\Product\LinksList" />
+	<preference for="Magento\Checkout\Controller\Cart\Add" type="MangoIt\BundleProductImage\Controller\Cart\Add" />
+	<type name="Magento\Catalog\Model\Config\Source\Product\Options\Price">
+    	<plugin name="MangoIt_BundleProductImage_Model_Price" type="MangoIt\BundleProductImage\Plugin\Product\View\Options\PricePlugin" sortOrder="1" />
+	</type>
+</config>
